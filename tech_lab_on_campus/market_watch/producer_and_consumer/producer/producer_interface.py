@@ -12,13 +12,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import pika
+import os
 
 class mqProducerInterface:
     def __init__(self, routing_key: str, exchange_name: str) -> None:
         # Save parameters to class variables
 
         # Call setupRMQConnection
-        pass
+
+        pass 
 
     def setupRMQConnection(self) -> None:
         # Set-up Connection to RabbitMQ service
@@ -35,5 +38,4 @@ class mqProducerInterface:
         # Close Channel
 
         # Close Connection
-    
         pass
